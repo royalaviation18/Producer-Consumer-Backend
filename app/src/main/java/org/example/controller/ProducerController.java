@@ -13,8 +13,8 @@ import java.util.Properties;
 @RestController
 @RequestMapping("/producer")
 public class ProducerController {
-    private static final String TOPIC_NAME = "testy";
-    private static final String BOOTSTRAP_SERVERS = "13.127.99.104:9092";
+    private static final String TOPIC_NAME = "prod-test";
+    private static final String BOOTSTRAP_SERVERS = "3.109.37.2:9092";
 
     private final Producer<String, String> kafkaProducer;
 

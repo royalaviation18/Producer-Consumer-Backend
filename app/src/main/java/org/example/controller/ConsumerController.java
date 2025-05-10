@@ -16,7 +16,7 @@ public class ConsumerController {
                 .register();
     }
 
-    @KafkaListener(topics = "testy", groupId = "metrics-consumer-group")
+    @KafkaListener(topics = "prod-test", groupId = "metrics-consumer-group")
     public void listen(String eventData) {
         System.out.println("Received event: " + eventData);
         kafkaEventsCounter.inc();
